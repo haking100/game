@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تسجيل دخول الأدمن</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1a1a2e;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+    }
+    input[type="password"] {
+      padding: 10px;
+      font-size: 16px;
+      width: 200px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #00adb5;
+      color: white;
+      border: none;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>أدخل كلمة السر للدخول</h2>
+  <input type="password" id="password" placeholder="كلمة السر">
+  <br>
+  <button onclick="checkPassword()">دخول</button>
+
+  <script>
+    function checkPassword() {
+      var pass = document.getElementById("password").value;
+      if (pass === "sheno123") {
+        window.location.href = "dashboard.html";
+      } else {
+        alert("كلمة السر غير صحيحة!");
+      }
+    }
+  </script>
+</body>
+</html>
