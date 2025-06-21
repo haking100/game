@@ -10,8 +10,7 @@
   <meta name="author" content="SHENO">
   <title>SHENO Games 🎮</title>
   <link rel="icon" href="favicon.png" type="image/png">
-  <style>
-    body  { #video-bg 
+     .video-bg {
       position: fixed;
       top: 0;
       left: 0;
@@ -19,17 +18,14 @@
       min-height: 100%;
       z-index: -1;
       object-fit: cover;
-    }animation: gradientBG 15s ease infinite;
+    }
+  <style>
+    body  { 
       color: white;
       padding: 30px 20px
     }
 
-    @keyframes gradientBG {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    
-    }
+    } 
 
     .game-box {
       background-color: rgba(0, 0, 0, 0.4);
