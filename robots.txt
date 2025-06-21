@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://haking100.github.io/game/sitemap.xml
