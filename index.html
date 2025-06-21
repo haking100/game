@@ -4,27 +4,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="google-site-verification" content="F82I-2BC7WEvMIvx7KLJUe-8Uqk24iaoxrwWXum1rZU" />
   <meta name="description" content="موقع SHENO Games - مكتبة ألعاب مجانية بتصميم احترافي مصري">
   <meta name="keywords" content="ألعاب, SHENO, SHENO Games, مكتبة ألعاب, تحميل ألعاب, flappy bird">
   <meta name="author" content="SHENO">
   <title>SHENO Games 🎮</title>
   <link rel="icon" href="favicon.png" type="image/png">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      background: linear-gradient(-45deg, #1d2b64, #f8cdda, #1d2b64, #f8cdda);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
+    body  { video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }animation: gradientBG 15s ease infinite;
       color: white;
-      padding: 50px 20px;
+      padding: 30px 20px
     }
 
     @keyframes gradientBG {
       0% {background-position: 0% 50%;}
       50% {background-position: 100% 50%;}
       100% {background-position: 0% 50%;}
+    
     }
 
     .game-box {
@@ -76,6 +80,8 @@
   </style>
 </head>
 <body>
+  class="video-bg">
+    <source src="yourvideo.mp4" type="video/mp4">
   <a href="login.html" class="admin-btn">لوحة التحكم</a>
 
   <h1>مرحباً بك في مكتبة ألعاب SHENO 👑</h1>
